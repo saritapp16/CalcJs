@@ -1,0 +1,60 @@
+.input_text {
+	
+	color: #99ff33;
+	background-color: black;
+	width: 342px;
+	height: 80px;
+	font-family: "Agency FB";
+	font-size: 50px;
+	text-align: right;
+	border-style: none;
+	border-radius: 5px;
+}
+
+.input_button {
+	
+	width: 78px;
+	height: 60px;
+	font-size: 40px;
+	border-style: none;
+	border-radius: 5px;
+	margin: 3px;
+	background-color: #EAECEE;
+	
+	
+}
+
+.input_button2 {
+	
+	width: 38px;
+	height: 80px;
+	background-color:#EAECEE;
+	
+}
+
+.input_button_long {
+	width: 344px;
+	height: 70px;
+	font-size: 40px;
+	border-style: none;
+	border-radius: 5px;
+	background-color:#EAECEE;
+	margin-top: 5px;
+}
+
+#container{
+	width: 348px;
+	height: 420px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.input_button:hover{
+	
+	background-color: #D5D8DC;
+}
+
+.input_button_long:hover{
+	
+	background-color: #D5D8DC;
+}

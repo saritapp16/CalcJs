@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+	<link rel="stylesheet" type="text/css" href="calc_css.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="calcFunctions.js">
+		
+	</script>
+	
+	<script>
+	 $(document).ready(function () {
+		function hide_element(){
+			$("#btnPrueba").hide();
+		}
+	 })
+	 
+	 
+	</script>
+	
+</head>
+<body>
+
+	<div id="container">
+		<div>
+			<input type="text" class="input_text" name="txtScreen2" id="txtScreen2" readonly>
+		</div>
+		<div>
+			<input type="button" name="btnSum" id="btnSum" value="+" onclick="sum();" class="input_button">
+			<input type="button" name="btnRest" id="btnRest" value="-" onclick="rest();" class="input_button">
+			<input type="button" name="btnMult" id="btnMult" value="*" onclick="mult();" class="input_button">
+			<input type="button" name="btnDiv" id="btnDiv" value="/" onclick="div();" class="input_button">
+		</div>
+
+		<div>
+			<input type="button" name="btn1" id="btn1" value="1" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btn2" id="btn2" value="2" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btn3" id="btn3" value="3" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btnClear" id="btnClear" value="C" onclick="clearScreen();" class="input_button">
+		</div>
+		<div>
+			<input type="button" name="btn4" id="btn4" value="4" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btn5" id="btn5" value="5" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btn6" id="btn6" value="6" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btn3" id="btnEqual" value="=" onclick="showResult();" class="input_button">
+		</div>
+		<div>
+			<input type="button" name="btn7" id="btn6" value="7" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btn8" id="btn7" value="8" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btn9" id="btn8" value="9" onclick="writeOneInField(this.value);" class="input_button">
+			<input type="button" name="btndot" id="btndot" value="." onclick="writeOneInField(this.value);" class="input_button">
+		</div>
+		<div>
+			<input type="button" name="btn0" id="btn0" value="0" onclick="writeOneInField(this.value);" class="input_button_long">
+		</div>
+	</div>
+
+
+	
+	<script>
+
+		document.getElementById("txtScreen2").value = cifra;
+	
+	</script>
+</body>
+</html> 
