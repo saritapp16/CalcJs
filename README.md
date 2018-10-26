@@ -1,3 +1,4 @@
 # CalcJs
 This is a basic calc, coded in JavaScript, HTML and CSS
-<img src="https://github.com/saritapp16/TicTacToe/blob/master/WhatsApp%20Image%202018-07-29%20at%2010.04.40%20AM.jpeg" align="center" height="500px" width="282px"/>
+</br>
+<img src="https://github.com/saritapp16/CalcJs/blob/master/Screen%20Shot%202018-10-25%20at%208.22.58%20PM.png" align="center" height="500px" width="282px"/>
