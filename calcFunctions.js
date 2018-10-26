@@ -21,7 +21,7 @@ function writeOneInField(value)
 }
 
 
-//This function avoid to write multiple zeros in the left side of a number
+//This function avoids to write multiple zeros in the left side of a number
 function avoidZero(_element){
 	
 	if(document.getElementById(_element).value == "0"){
@@ -39,9 +39,15 @@ function avoid_repeted_arithsign(formula){
 	return has_sign;
 }
 
-function prueba(){
-	console.log(avoid_repeted_arithsign("H**OLA"));
+function replace_arith_sign(formula, new_arith_sign){
+	var new_formula;
+	if(formula.length>0){
+		new_formula = formula.substring(0, formula.length - 1) + new_arith_sign; 
+	}
+	return new_formula;
 }
+
+
 
 function sum(){
 
@@ -56,6 +62,9 @@ function sum(){
 	if (avoid_repeted_arithsign(document.getElementById("txtScreen2").value)){
 		document.getElementById("txtScreen2").value = document.getElementById("txtScreen2").value + arithSign;
 	}
+	else{
+		document.getElementById("txtScreen2").value = replace_arith_sign(document.getElementById("txtScreen2").value, arithSign);
+	}
 }
 
 function rest(){
@@ -69,6 +78,10 @@ function rest(){
 	if (avoid_repeted_arithsign(document.getElementById("txtScreen2").value)){
 		document.getElementById("txtScreen2").value = document.getElementById("txtScreen2").value + arithSign;
 	}
+	else{
+		document.getElementById("txtScreen2").value = replace_arith_sign(document.getElementById("txtScreen2").value, arithSign);
+	}
+
 }
 
 function mult(){
@@ -82,6 +95,9 @@ function mult(){
 	if (avoid_repeted_arithsign(document.getElementById("txtScreen2").value)){
 		document.getElementById("txtScreen2").value = document.getElementById("txtScreen2").value + arithSign;
 	}
+	else{
+		document.getElementById("txtScreen2").value = replace_arith_sign(document.getElementById("txtScreen2").value, arithSign);
+	}
 }
 
 function div(){
@@ -94,6 +110,9 @@ function div(){
 	cifra = "";
 	if (avoid_repeted_arithsign(document.getElementById("txtScreen2").value)){
 		document.getElementById("txtScreen2").value = document.getElementById("txtScreen2").value + arithSign;
+	}
+	else{
+		document.getElementById("txtScreen2").value = replace_arith_sign(document.getElementById("txtScreen2").value, arithSign);
 	}
 }
 
